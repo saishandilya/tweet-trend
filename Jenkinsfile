@@ -63,7 +63,7 @@ environment {
             steps {
                 script {
                   echo '<--------------- Docker Publish Started --------------->'  
-                    docker.withRegistry(registry, 'jfrog-cred'){
+                    docker.withRegistry(registry, 'jfrog-creds'){
                         app.push()
                     }    
                   echo '<--------------- Docker Publish Ended --------------->'  
